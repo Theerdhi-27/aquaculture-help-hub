@@ -159,72 +159,149 @@ a {
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
-/* Make layout responsive on mobile devices */
-@media (max-width: 600px) {
-    #lan{
-        font-size: 22px;
-    }
+@media only screen and (max-width: 600px) {
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', cursive;
+    background-image: url(https://res.cloudinary.com/ddssdrp0l/image/upload/v1750837977/Screenshot_2025-06-24_204556_cauepk.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+  }
+  .language-container {
+    width: 90%;
+    padding: 20px;
+  }
 
-    .btn{
-        font-size: 16px;
-        padding: 10px 20px;
-        width: 90%;
-    }
+  .language-container h1 {
+    font-size: 20px;
+  }
+
+  .language-container button {
+    width: 80%;
+    font-size: 18px;
+    padding: 12px;
+  }
 }
 /* Optional: Add smooth scaling when user hovers */
-.btn:hover {
+.language-container button:hover {
     background-color: #005f8e;
     transform: scale(1.03);
 }
 
 /* Make buttons more accessible */
-.btn:focus {
+.language-container button:focus {
     outline: 3px solid #90e0ef;
 }
  
-@media (max-width: 480px) {
-    #aqua{
-        font-size: 1.6rem;
-    }
-    .but {
-        font-size: 0.95rem;
-        height: 44px;
-    }
-}
-/* ✅ Mobile-friendly styles */
 @media (max-width: 600px) {
-    .about-container {
-        padding: 25px 20px;
-    }
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', cursive;
+    background-image: url(https://res.cloudinary.com/ddssdrp0l/image/upload/v1750837977/Screenshot_2025-06-24_204556_cauepk.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+  }
+  .container {
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background: 0 0 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  }
 
-    h1 {
-        font-size: 1.6rem;
-    }
+  .container h1 {
+    font-size: 7vw; /* bigger heading */
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+  }
 
-    h2 {
-        font-size: 1.3rem;
-    }
+  .container button{
+    display: block;
+    padding: 14px;
+    margin: 10px auto;
+    font-size: 5.5vw; /* larger buttons */
+    width: 90%;
+    border-radius: 25px;
+    background-color: white;
+    color: #0077b6;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
 
-    ul {
-        font-size: 1rem;
-    }
-
-    .navigation-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        font-size: 1rem;
-    }
-
-    #btn1,
-    #btn2 {
-        width: 100%;
-        max-width: 250px;
-        height: 45px;
-    }
+  .container button:hover {
+    transform: scale(1.05);
+  }
 }
-
-
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', cursive;
+    background-image: url(https://res.cloudinary.com/ddssdrp0l/image/upload/v1750837977/Screenshot_2025-06-24_204556_cauepk.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+  }
+ .about-container h1{
+    font-size: 6.5vw;
+    text-align: center;
+    color: #0077b6;
+    margin: 15px 0;
+  }
+  .navigation-buttons {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .navigation-buttons {
+    display: inline-block;
+    background-color: #0096c7;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+  }
+  .navigation-buttons:hover {
+    background-color: #0077b6;
+  }
+  .about-container p, li {
+    font-size: 4.5vw;
+    line-height: 1.6;
+    margin: 10px 20px;
+    color: #222;
+  }
+  .about-container h2{
+    font-size: 5.0vw;
+    line-height: 1.6;
+    margin: 10px 20px;
+    color: #222;
+  }
+  .about-container ul {
+    font-size: 4.5vw;
+    line-height: 1.6;
+    margin: 10px 20px;
+    color: #222;
+    padding-left: 30px;
+  }
+}
 .video-grid {
   display: flex;
   flex-wrap: wrap;
