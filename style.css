@@ -159,115 +159,174 @@ a {
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
-@media (max-width: 600px) {
-  body {
-    font-size: 18px;
-    line-height: 1.6;
-    padding: 15px;
-  }
-
-  h1, h2, h3, h4 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-
-  .language-box,
-  .menu-container,
-  .button-container {
-    padding: 20px;
-    margin: 15px 10px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-  }
-
-  p, li {
-    font-size: 17px;
-    margin-bottom: 10px;
-  }
-
-  button,
-  .btn {
-    font-size: 18px;
-    padding: 12px 24px;
-    margin: 10px auto;
-    display: block;
-    width: 90%;
-    max-width: 300px;
-    border-radius: 25px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .container {
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  ul {
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    font-size: 18px;
-    padding: 10px;
+/* Make layout responsive on mobile devices */
+/* Mobile responsive styling */
+@media only screen and (max-width: 600px) {
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', cursive;
+    background-image: url(https://res.cloudinary.com/ddssdrp0l/image/upload/v1750837977/Screenshot_2025-06-24_204556_cauepk.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+  }
+  .language-container {
+    width: 90%;
+    padding: 20px;
   }
 
-  h1, h2, h3, h4 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  .language-container h1 {
+    font-size: 20px;
   }
 
-  p, ul, li {
-    font-size: 17px;
-    line-height: 1.6;
-    margin-bottom: 12px;
-  }
-
-  .container,
-  .language-container,
-  .about-container,
-  .language-box,
-  .menu-container,
-  .button-container {
-    padding: 25px 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
-    width: 95%;
-    margin: auto;
-  }
-
-  button,
-  .btn,
-  .bt,
-  .an,
-  #btn1,
-  #btn2 {
+  .language-container button {
+    width: 80%;
     font-size: 18px;
-    padding: 14px 24px;
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    border-radius: 25px;
-    margin: 12px auto;
-  }
-
-  .navigation-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .video-grid iframe {
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 12px;
   }
 }
+/* Optional: Add smooth scaling when user hovers */
+.language-container button:hover {
+    background-color: #005f8e;
+    transform: scale(1.03);
+}
+
+/* Make buttons more accessible */
+.language-container button:focus {
+    outline: 3px solid #90e0ef;
+}
+ 
+@media (max-width: 600px) {
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    background-image: url(https://res.cloudinary.com/ddssdrp0l/image/upload/v1750837977/Screenshot_2025-06-24_204556_cauepk.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+  }
+  .container {
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background: 0 0 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+
+  .container h1 {
+    font-size: 7vw; /* bigger heading */
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+  }
+
+  .container button{
+    display: block;
+    padding: 14px;
+    margin: 10px auto;
+    font-size: 5.5vw; /* larger buttons */
+    width: 90%;
+    border-radius: 25px;
+    background-color: white;
+    color: #0077b6;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .container button:hover {
+    transform: scale(1.05);
+  }
+}
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    background-image: url(https://res.cloudinary.com/ddssdrp0l/image/upload/v1750837977/Screenshot_2025-06-24_204556_cauepk.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+  }
+ .about-container h1{
+    font-size: 6.5vw;
+    text-align: center;
+    color: #0077b6;
+    margin: 15px 0;
+  }
+  .navigation-buttons {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .navigation-buttons {
+    display: inline-block;
+    background-color: #0096c7;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  }
+  .navigation-buttons:hover {
+    background-color: #0077b6;
+  }
+  .about-container p, li {
+    font-size: 4.5vw;
+    line-height: 1.6;
+    margin: 10px 20px;
+    color: #222;
+  }
+  .about-container h2{
+    font-size: 5.0vw;
+    line-height: 1.6;
+    margin: 10px 20px;
+    color: #222;
+  }
+  .about-container ul {
+    font-size: 4.5vw;
+    line-height: 1.6;
+    margin: 10px 20px;
+    color: #222;
+    padding-left: 30px;
+  }
+}
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.video-grid iframe {
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile support */
+@media (max-width: 768px) {
+  .video-grid iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
